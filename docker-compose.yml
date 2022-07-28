@@ -1,0 +1,13 @@
+version: "3.4"
+
+services:
+  api:
+    image: api
+    build:
+      context: .
+      target: api-production
+    stdin_open: true
+    env_file:
+      - .env
+    ports:
+      - "$API_PORT:8000"
