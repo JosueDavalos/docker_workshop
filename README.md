@@ -2,6 +2,7 @@
 
 Docker Workshop
 
+```
 sudo apt-get update
 sudo apt upgrade
 sudo apt install -y docker.io docker-compose
@@ -10,3 +11,4 @@ sudo reboot
 sudo snap install --classic code
 
 docker run hello-world
+```
