@@ -1,7 +1,7 @@
 FROM node:16-alpine3.15 as build-stage
 WORKDIR /view
 COPY package.json .
-RUN npm install --legacy-peer-deps
+RUN npm install
 COPY . .
 RUN npm run build
 

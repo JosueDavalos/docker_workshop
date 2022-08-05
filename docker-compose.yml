@@ -4,10 +4,22 @@ services:
   api:
     image: api
     build:
-      context: .
+      context: api/
       target: api-production
     stdin_open: true
     env_file:
       - .env
     ports:
       - "$API_PORT:8000"
+
+  view:
+    image: view
+    build:
+      context: view/
+    stdin_open: true
+    env_file:
+      - .env
+    ports:
+      - "$VIEW_PORT:8080"
+    depends_on:
+      - api

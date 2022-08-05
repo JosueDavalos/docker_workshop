@@ -1,0 +1,18 @@
+*.log
+.dockerignore
+
+.git
+.gitignore
+dockerfile
+README.md
+env/*
+**/__pycache__/**
+**/*.pyc
+# *.txt
+*.swp
+*.yml
+.idea/
+
+# folders
+view/
+

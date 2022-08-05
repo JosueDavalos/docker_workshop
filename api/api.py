@@ -8,9 +8,9 @@ CORS(app)
 PORT = 8000
 
 
-@app.route("/test")
+@app.route("/options")
 def get_test():
-    return jsonify({"message": "TODO Posi :D"})
+    return jsonify({"opciones": ["Super duper", "Muy bueno", "Docker Up!"]})
 
 
 if __name__ == "__main__":

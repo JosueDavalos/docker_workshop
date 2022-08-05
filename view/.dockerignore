@@ -1,0 +1,16 @@
+*.log
+.dockerignore
+.git
+.gitignore
+build/*
+dist/*
+JS-ex
+Dockerfile
+node_modules
+npm-debug.log*
+README.md
+*.txt
+txts
+.prettierrc
+.eslintrc
+package-lock.json
